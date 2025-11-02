@@ -104,7 +104,23 @@
             left: 0;
             z-index: 1;
         }
-
+        
+        .header-pdf-link {
+            display: inline-block;
+            margin-top: 0.5rem; /* mt-2 */
+            padding: 0.25rem 0.5rem; /* py-1 px-2 */
+            font-size: 0.875rem; /* text-sm */
+            font-weight: 600; /* semibold */
+            border-radius: 0.25rem; /* rounded-md */
+            text-decoration: none;
+            /* Apply a light background gradient matching the brand colors */
+            background: linear-gradient(90deg, #e0e7fa, #faeddd); /* var(--primary-blue-light) to var(--primary-gold-light) */
+            color: var(--slate-700);
+            border: 1px solid rgba(106, 140, 218, 0.3); /* Subtle blue border */
+        }
+        .header-pdf-link:hover {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
         /* Specific fade overlays for each card background color */
         .image-fade-overlay-blue {
             position: absolute;
@@ -232,6 +248,9 @@
             <p class="text-2xl font-bold color-primary-blue">Helping every mind take flight</p>
             <p class="text-xl font-bold color-primary-gold">Driving Digital Well-being and Performance for Students, Professionals, and Institutions</p>
             <p class="text-sm text-slate-500 mt-1 mb-4">Aligned with UN Sustainable Development Goal 3 – Good Health & Well-being</p>
+            <a href="https://frankielai1121.github.io/MindWing/MindWing_prospectus_2025.pdf" target="_blank" class="header-pdf-link">
+    Download Prospectus (PDF)
+</a>
         </header>
 
         <nav class="flex justify-center border-b-2 border-primary-blue bg-nav-gradient mb-8 shadow-inner">
@@ -942,4 +961,5 @@
     </script>
 </body>
 </html>
+
 
